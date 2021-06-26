@@ -1,0 +1,135 @@
+a{
+    text-decoration: none;
+}
+.text-centered{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+html{
+    /*overflow-x: hidden;*/
+    width: 1600px;
+    position: relative;
+    top: -50px;
+    margin:auto;
+}
+body{
+    font-family: Poppins;
+    width: 1200px;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 94px;
+}
+.button{
+    display: inline-flex;
+    width: 170px;
+    height: 57px;
+    border-radius: 29px;/*28.5*/
+    background-color: #2500f9;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+header a{
+    display: inline-block;
+    margin: 18px;
+}
+.logo{
+    color: #242f51;
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 30px;
+}
+.logo>span{
+    color: #fcae61;
+}
+#background{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1600px;
+    z-index: -1;
+}
+#background>.part1{
+    position: absolute;
+    left: 10px;
+    top: 209px;
+    width: 788px;
+    height: 630px;
+    background:url("images/background/part1.png") no-repeat;
+    opacity: 0.19;
+}
+#background>.part2{
+    position: absolute;
+    left: 910px;
+    top: 169px;
+    width: 446px;
+    height: 816px;
+    background:url("images/background/part2.png") no-repeat;
+}
+#background>.part3{
+    width: 1600px;
+    height: 865px;
+    background:url("images/background/part3.png") no-repeat top left;
+}
+
+#banner1{
+    position: absolute;
+    left: 297px;
+    top: 412px;
+}
+#banner1>.part1{
+    position: relative;
+    width: 362px;
+    height: 35px;
+    background-color: #e2eaed;
+    border-radius: 18px;/*17.5px*/
+}
+#banner1>.part1>div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 39px;
+    height: 35px;
+    background-color: #feaa25;
+    color: white;
+    font-family: FontAwesome5Pro;
+    border-radius: 18px;/*17.5px*/
+}
+#banner1>.part2{
+    margin: 0;
+    margin-top: 24px;
+    margin-bottom: 27px;
+    color: #242f51;
+    font-size: 60px;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 75px;
+    width: 519px;
+}
+#banner1>.part3{
+    font-size: 18px;
+    font-family: Poppins;
+    line-height: 28px;
+    font-weight: 400;
+    width: 486px;
+    color: #616368;
+    margin-bottom: 40px;
+}
+#banner1>.part4 {
+    display: flex;
+    align-items: center;
+}
+#banner1>.part4>.button{
+    margin: 0;
+    margin-right: 27px;
+}
+
+
+
