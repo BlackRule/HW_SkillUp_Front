@@ -39,10 +39,11 @@ header{
 header a{
     display: inline-block;
     margin: 18px;
+    color: #242f51;
+    font-weight: 400; /*regular*/
 }
 .logo{
     color: #242f51;
-    font-family: Poppins;
     font-weight: bold;
     font-size: 30px;
 }
@@ -75,8 +76,56 @@ header a{
 }
 #background>.part3{
     width: 1600px;
-    height: 865px;
-    background:url("images/background/part3.png") no-repeat top left;
+    height: 1000px;/*865*/
+    background:url("images/background/part3.png") no-repeat;
+}
+#background>.part4{
+    position: absolute;
+    top: 756px;
+    width: 1600px;
+    height: 1000px;/*865*/
+    background:url("images/background/part4.png") no-repeat;
+    z-index: -1;
+}
+#background>.part5{
+    position: absolute;
+    left: 92px;
+    top: 1410px;
+    width: 665px;
+    height: 839px;
+    background:url("images/background/part5.png") no-repeat;
+}
+#background>.part6{
+    position: absolute;
+    top: 2963px;
+    left: 156px;
+    width: 600px;
+    height: 550px;
+    background:url("images/background/part6.png") no-repeat;
+}
+#background>.part7{
+    position: absolute;
+    top: 4726px;
+    right: 0;
+    width: 763px;
+    height: 807px;
+    background:url("images/background/part7.png") no-repeat;
+}
+#background>.part8{
+    position: absolute;
+    top: 6991px;
+    left: 0;
+    width: 823px;
+    height: 517px;
+    background:url("images/background/part8.png") no-repeat;
+}
+#background>.part9{
+    position: absolute;
+    top: 8555px;
+    right: 0;
+    width: 844px;
+    height: 472px;
+    background:url("images/background/part9.png") no-repeat;
 }
 
 #banner1{
@@ -108,14 +157,12 @@ header a{
     margin-bottom: 27px;
     color: #242f51;
     font-size: 60px;
-    font-family: Poppins;
-    font-weight: 600;
+    font-weight: 600;/*semi-bold*/
     line-height: 75px;
     width: 519px;
 }
 #banner1>.part3{
     font-size: 18px;
-    font-family: Poppins;
     line-height: 28px;
     font-weight: 400;
     width: 486px;
@@ -129,6 +176,84 @@ header a{
 #banner1>.part4>.button{
     margin: 0;
     margin-right: 27px;
+}
+
+#banner2{
+    position: absolute;
+    top: 1116px;
+    left: 335px;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#banner2>:nth-child(1){
+    margin-bottom: 36px;
+}
+#banner2 img{
+    margin: 0 25px;
+}
+#banner3{
+    position: absolute;
+    top: 1466px;
+    left: 778px;
+    width: 445px;
+    display: flex;
+    flex-direction: column;
+}
+#banner3>:nth-child(1){
+    font-size: 36px;
+    font-weight: 600;/*semi-bold*/
+    margin-bottom: 25px;
+}
+#banner3>:nth-child(2){
+    margin-bottom: 95px;
+}
+#banner3>:nth-child(3){
+    height: 445px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#banner3 .feature{
+    margin-bottom: 95px;
+    padding-left: 115px;
+    background-position: left center;
+    position: relative;
+}
+#banner3 .feature>.icon{
+    width: 88px;
+    height: 88px;
+    border-radius: 44px;
+    position: absolute;
+    top:16px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#banner3 .feature:nth-child(1)>.icon{
+    background-color: #ffecef;
+}
+#banner3 .feature:nth-child(1)>h3{
+    color: #f55767;
+}
+#banner3 .feature:nth-child(2)>.icon{
+    background-color: #f4f4ff;
+}
+#banner3 .feature:nth-child(2)>h3{
+    color: #2563ff;
+}
+#banner3 .feature:nth-child(3)>.icon{
+    background-color: #e4ffee;
+}
+#banner3 .feature:nth-child(3)>h3{
+    color: #40975f;
+}
+#banner3 .feature>h3{
+    margin: 0;
+    margin-bottom: 5px;
+    font-weight: 600;/*semi-bold*/
 }
 
 
