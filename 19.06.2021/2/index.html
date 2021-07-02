@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .card {
+            display: inline-block;
+            color: blue;
+            margin-top: -7px;
+            margin-right: -7px;
+            margin-left: 53px;
+            margin-bottom: 53px;
+            cursor: pointer;
+        }
+
+        .card:hover .card__level{
+            top: 0;
+            right: 0;
+        }
+
+        .card__level {
+            transition-duration: 2s;
+            border: 3px solid black;
+            margin: -3px;
+            display: inline-block;
+            position: relative;
+            top: 10px;
+            right: 10px;
+            background-color: white;
+        }
+
+        .card__level1 {
+            border-color: red;
+        }
+
+        .card__level2 {
+            border-color: orange;
+        }
+
+        .card__level3 {
+            border-color: yellow;
+        }
+
+        .card__level4 {
+            border-color: green;
+        }
+
+        .card__level5 {
+            border-color: blue;
+        }
+
+        .card__content {
+            padding: 15px;
+        }
+
+        .p{
+            border: 1px solid black;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<div class="p">
+    <div class="card">
+        <div class="card__level card__level1">
+            <div class="card__level card__level2">
+                <div class="card__level card__level3">
+                    <div class="card__level card__level4">
+                        <div class="card__level card__level5 card__content">
+                            <div style="text-transform: uppercase">codemyui.com</div>
+                            <div style="font-weight: bold">How I recreated Polaroid camera with CSS gradients only</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
