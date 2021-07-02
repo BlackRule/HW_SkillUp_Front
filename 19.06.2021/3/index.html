@@ -2,76 +2,382 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
     <title>Title</title>
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="fonts/fa-regular.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-    <link href="debug.css" rel="stylesheet">
+    <!-- fa-solid.css for .star-filled   -->
+    <link href="fonts/fa-solid.css" rel="stylesheet">
+    <link href="fonts/fa-brands-regular.css" rel="stylesheet">
+    <link href="style/reset.css" rel="stylesheet">
+    <link href="style/common.css" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet">
+    <link href="style/debug.css" rel="stylesheet">
 </head>
 <body>
-<div id="background">
-    <div class="part1"></div>
-    <div class="part2"></div>
-    <div class="part3"></div>
-    <div class="part4"></div>
-    <div class="part5"></div>
-    <div class="part6"></div>
-    <div class="part7"></div>
-    <div class="part8"></div>
-    <div class="part9"></div>
-</div>
-<header>
-    <div class="logo text-centered"><span>App</span>Lab</div>
-    <div><a href="">Home</a>
-        <a href="">Key Features</a>
-        <a href="">Pricing</a> <a href="">Testimonial</a> <a href="">FAQ</a> <a class="button text-centered">Try for
-            free</a></div>
+<header class="header color_dark-blue">
+    <a class="logo text-centered" href="#">
+        <span class="color_orange">App</span>Lab
+    </a>
+    <label class="header__label" for="header__label_cb">
+        <span></span>
+    </label>
+    <input class="header__label_cb" id="header__label_cb" type="checkbox">
+    <nav class="header__nav">
+        <a class="header__a" href="#">Home</a>
+        <a class="header__a" href="#">Key Features</a>
+        <a class="header__a" href="#">Pricing</a>
+        <a class="header__a" href="#">Testimonial</a>
+        <a class="header__a" href="#">FAQ</a>
+        <a class="button text-centered" href="#">Try for free</a>
+    </nav>
 </header>
-<main>
-    <div id="banner1">
-        <div class="part1 text-centered">
-            <div class="text-centered"></div>
-            #1 Editiors Choice App of 2020
-        </div>
-        <div class="part2">Best app for your modern lifestyle</div>
-        <div class="part3">Increase productivity with a simple to-do app. app for managing your personal budgets.</div>
-        <div class="part4">
-            <a class="button text-centered">Try for free</a><a href="">Watch demo video</a>
-        </div>
+<main class="main">
+    <div class="w1200">
+        <section class="section1">
+            <div class="section1__bg"></div>
+            <div class="section1__text">
+                <div class="section1__moto">
+                    <span class="section1__moto__badge text-centered"></span>
+                    #1 Editiors Choice App of 2020
+                </div>
+                <h3 class="h1">Best app for your modern lifestyle</h3>
+                <p class="section1__p">Increase productivity with a simple to-do app. app for managing your personal
+                    budgets.</p>
+                <div class="section1__footer">
+                    <a class="button text-centered">Try for free</a><a class="section1__link" href="#">Watch demo
+                    video</a>
+                </div>
+            </div>
+            <img alt="" class="section__img" src="/images/part2.png"/>
+        </section>
+        <section class="section2">
+            <div> Trusted by companies like</div>
+            <div class="section2__list">
+                <img alt="Southwest company" class="section2__list__item" src="images/companies/1.png">
+                <img alt="Anubis entertainment" class="section2__list__item" src="images/companies/2.png">
+                <img alt="Alonzo casseta" class="section2__list__item" src="images/companies/3.png">
+                <img alt="Premium express" class="section2__list__item" src="images/companies/4.png">
+                <img alt="Maniac" class="section2__list__item" src="images/companies/5.png">
+            </div>
+        </section>
+        <section class="section3">
+            <img alt="" class="section__img" src="/images/part5.png">
+            <div class="section3__text">
+                <h3 class="h3">Awesome apps features</h3>
+                <p>Increase productivity with a simple to-do app. app for managing your personal budgets.</p>
+                <div class="">
+                    <div class="feature">
+                        <div class="icon icon_red"><img alt="" src="images/features/1.png"></div>
+                        <div><h3 class="color_red">Fast Performance</h3>
+                            <div>Get your blood tests delivered at home collect a sample from the news your blood tests.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="icon icon_blue"><img alt="" src="images/features/2.png"></div>
+                        <div><h3 class="color_blue">Prototyping</h3>
+                            <div>Get your blood tests delivered at home collect a sample from the news your blood tests.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="icon icon_green"><img alt="" src="images/features/3.png"></div>
+                        <div><h3 class="color_green">Vector Editing</h3>
+                            <div>Get your blood tests delivered at home collect a sample from the news your blood tests.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section4 section">
+            <h2 class="h2 flex1">Smart jackpots that you may love this anytime &amp; anywhere</h2>
+            <div class="vr"></div>
+            <p>The rise of mobile devices transforms the way we consume information entirely and the world's most
+                relevant channels such as Facebook.</p>
+        </section>
+        <section class="section5 section">
+            <div class="feature">
+                <div class="icon icon_red"><img alt="" src="images/features/4.png"></div>
+                <div><h3 class="color_red">Automatic Payouts</h3>
+                    <div>Get your blood tests delivered at home collect a sample from the news your blood tests.</div>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="icon icon_blue"><img alt="" src="images/features/5.png"></div>
+                <div><h3 class="color_blue">Network Effect</h3>
+                    <div>Get your blood tests delivered at home collect a sample from the news your blood tests.</div>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="icon icon_green"><img alt="" src="images/features/6.png"></div>
+                <div><h3 class="color_green">Bigger Rewards Method</h3>
+                    <div>Get your blood tests delivered at home collect a sample from the news your blood tests.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section6 section">
+            <img alt="" class="section__img" src="images/part6.png">
+            <div class="section6__text">
+                <h3 class="h3">Designed & built by the latest code integration</h3>
+                <p>The rise of mobile devices transforms the way we consume information entirely and the world's most
+                    relevant channels such as Facebook.</p>
+                <a class="button" href="#">Learn more</a>
+            </div>
+        </section>
+        <section class="section7">
+            <h3 class="h3"></h3>
+            <p>The rise of mobile devices transforms the way we consume information entirely and the world's most
+                relevant channels such as Facebook.</p>
+            <div class="section7__features">
+                <div class="feature">
+                    <div class="icon icon_red"><img alt="" src="images/features/7.png"></div>
+                    <div><h3 class="color_red">App Development</h3>
+                        <div>Get your blood tests delivered at home collect a sample from the news your blood tests.
+                        </div>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="icon icon_blue"><img alt="" src="images/features/8.png"></div>
+                    <div><h3 class="color_blue">10 Times Award</h3>
+                        <div>Get your blood tests delivered at home collect a sample from the news your blood tests.
+                        </div>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="icon icon_green"><img alt="" src="images/features/computer.png"></div>
+                    <div><h3 class="color_green">Cloud Storage</h3>
+                        <div>Get your blood tests delivered at home collect a sample from the news your blood tests.
+                        </div>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="icon icon_red"><img alt="" src="images/features/10.png"></div>
+                    <div><h3 class="color_red">App Development</h3>
+                        <div>Get your blood tests delivered at home collect a sample from the news your blood tests.
+                        </div>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="icon icon_blue"><img alt="" src="images/features/ui.png"></div>
+                    <div><h3 class="color_blue">10 Times Award</h3>
+                        <div>Get your blood tests delivered at home collect a sample from the news your blood tests.
+                        </div>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="icon icon_green"><img alt="" src="images/features/customer-service.png"></div>
+                    <div><h3 class="color_green">Cloud Storage</h3>
+                        <div>Get your blood tests delivered at home collect a sample from the news your blood tests.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section8 section">
+            <div class="section8__text">
+                <h3 class="h3">Ultimate features that we built</h3>
+                <p>The rise of mobile devices transforms the way we consume information entirely.</p>
+                <div class="section8__features">
+                    <div class="feature">
+                        <div class="icon icon_red"><img alt="" src="images/features/web-design.png"></div>
+                        <div><h3 class="color_red">App Development</h3>
+                            <div>Get your blood tests delivered at home collect a sample from the news your blood
+                                tests.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="icon icon_blue"><img alt="" src="images/features/ui.png"></div>
+                        <div><h3 class="color_blue">UX Planing</h3>
+                            <div>Get your blood tests delivered at home collect a sample from the news your blood
+                                tests.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="icon icon_green"><img alt="" src="images/features/computer.png"></div>
+                        <div><h3 class="color_green">Cloud Storage</h3>
+                            <div>Get your blood tests delivered at home collect a sample from the news your blood tests.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="icon icon_red"><img alt="" src="images/features/customer-service.png"></div>
+                        <div><h3 class="color_red">Customer support</h3>
+                            <div>Get your blood tests delivered at home collect a sample from the news your blood
+                                tests.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="button" href="#">See All</a>
+            </div>
+            <img alt="" class="section__img" src="images/part7.png">
+        </section>
+        <section class="section9 section-vertical">
+            <h3 class="h3 text-centered">Get awesome features, without extra charges</h3>
+            <p class="text-centered">The rise of mobile devices transforms the way we consume information entirely and
+                the world's most relevant channels such as Facebook.</p>
+            <input checked class="switch__radio" id="switch__radio11" name="switch__radio1" type="radio">
+            <input class="switch__radio" id="switch__radio12" name="switch__radio1" type="radio">
+
+            <div class="switch__holder">
+                <label class="button switch__button" for="switch__radio11" id="switch__button11">
+                    Monthly
+                </label>
+                <label class="button switch__button" for="switch__radio12" id="switch__button12">
+                    Annually
+                </label>
+            </div>
+            <div class="section9_cards" id="cardSet1">
+                <!-- .card.color_grey>(.card__header>(.card__header__cp>h1.h1+.card__header_period)+h4.h4+div)+(.card__body>div*4+.button)-->
+                <div class="card color_grey card_shadowed">
+                    <div class="card__header">
+                        <div class="card__header__cp">
+                            <h1 class="h1">$0</h1>
+                            <div class="card__header_period">/month</div>
+                        </div>
+                        <h4 class="h4">Business Class</h4>
+                        <div>For small teams or office</div>
+                    </div>
+                    <div class="card__body">
+                        <div>Drag & Drop Builder</div>
+                        <div>1,000's of Templates</div>
+                        <div>Blog Support Tools</div>
+                        <div>eCommerce Store</div>
+                        <div class="button">Start Free Trial</div>
+                    </div>
+                </div>
+                <div class="card color_grey card_bordered">
+                    <div class="card__header">
+                        <div class="card__header__cp">
+                            <h1 class="h1">$99</h1>
+                            <div class="card__header_period">/month</div>
+                        </div>
+                        <h4 class="h4">Pro Master</h4>
+                        <div>For Best opportunities</div>
+                    </div>
+                    <div class="card__body">
+                        <div>Drag & Drop Builder</div>
+                        <div>1,000's of Templates</div>
+                        <div>Blog Support Tools</div>
+                        <div>eCommerce Store</div>
+                        <div class="button">Subscribe Now</div>
+                        <a class="color_blue1" href="#">Or Start 14 days trail</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section10 section">
+            <img alt="" class="section__img" src="images/part8.png">
+            <div class="section10__text">
+                <h2 class="h2">Meet Client Satisfaction by using product</h2>
+                <p>The rise of mobile devices transforms the way we consume. relevant channels such as Facebook.</p>
+                <div class="section10__reviews">
+                    <div class="review">
+                        <div>
+                            <span class="star star-filled">&#61445;</span>
+                            <span class="star star-filled">&#61445;</span>
+                            <span class="star star-filled">&#61445;</span>
+                            <span class="star star-filled">&#61445;</span>
+                            <span class="star">&#61445;</span>
+                        </div>
+                        <h4 class="h4">User friendly & Customizable</h4>
+                        <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of
+                            the
+                            day, going forward, a new normal that has evolved from generation X is on the runway heading
+                            towards a streamlined cloud solution. User generated content in real-time will have multiple
+                            touchpoints for offshoring.</p>
+                        <div class="review__footer flex">
+                            <div class="flex">
+                                <img alt="" class="section__img" src="/images/reviews/adult-beard-boy-220453.png">
+                                <div class="review__footer__text">
+                                    <h5 class="h5">Zoltan Nemeth</h5>
+                                    <p class="p">CEO of Pixler Lab</p>
+                                </div>
+                            </div>
+                            <div class="review__footer__arrows flex">
+                                <div class="review__footer__arrow footer__arrow_disabled"></div>
+                                <div class="vr"></div>
+                                <div class="review__footer__arrow"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section11">
+            <h2 class="h2">Frequently asked questions</h2>
+            <p class="p">The rise of mobile devices transforms the way we consume information entirely
+                and the world's most elevant channels such as Facebook.</p>
+            <div class="section11__faqs">
+                <details>
+                    <summary>How to contact with riders emergency?</summary>
+                    Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative
+                    approaches to corporate strategy foster collaborative thinking to further the overall value
+                    proposition. Organically grow the holistic world view of disruptive innovation via workplace
+                    diversity and empowerment.
+                </details>
+                <details>
+                    <summary>App installation failed, how to update system information?</summary>
+                    Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative
+                    approaches to corporate strategy foster collaborative thinking to further the overall value
+                    proposition. Organically grow the holistic world view of disruptive innovation via workplace
+                    diversity and empowerment.
+                </details>
+                <details>
+                    <summary>Website reponse taking time, how to improve?</summary>
+                    Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative
+                    approaches to corporate strategy foster collaborative thinking to further the overall value
+                    proposition. Organically grow the holistic world view of disruptive innovation via workplace
+                    diversity and empowerment.
+                </details>
+                <details>
+                    <summary>New update fixed all bug and issues</summary>
+                    Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative
+                    approaches to corporate strategy foster collaborative thinking to further the overall value
+                    proposition. Organically grow the holistic world view of disruptive innovation via workplace
+                    diversity and empowerment.
+                </details>
+                <details>
+                    <summary>How to contact with riders emergency?</summary>
+                    Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative
+                    approaches to corporate strategy foster collaborative thinking to further the overall value
+                    proposition. Organically grow the holistic world view of disruptive innovation via workplace
+                    diversity and empowerment.
+                </details>
+            </div>
+        </section>
     </div>
-    <div id="banner2">
-        <div>Trusted by companies like</div>
+    <div class="section12 section">
         <div>
-            <img alt="Southwest company" src="images/companies/1.png">
-            <img alt="Anubis entertainment" src="images/companies/2.png">
-            <img alt="Alonzo casseta" src="images/companies/3.png">
-            <img alt="Premium express" src="images/companies/4.png">
-            <img alt="Maniac" src="images/companies/5.png">
+            <h2 class="h2">Download our App now !</h2>
+            <p>The rise of mobile devices transforms the way we consume information entirely
+                and the world's most relevant channels such as Facebook.</p>
+            <div></div>
         </div>
-    </div>
-    <div id="banner3">
-        <div>Awesome apps features</div>
-        <div>Increase productivity with a simple to-do app. app for managing your personal budgets.</div>
-        <div>
-            <div class="feature">
-                <div class="icon"><img src="images/features/1.png" alt=""></div>
-                <h3>Fast Performance</h3>
-                <div>Get your blood tests delivered at home collect a sample from the news your blood tests.</div>
-            </div>
-            <div class="feature">
-                <div class="icon"><img src="images/features/2.png" alt=""></div>
-                <h3>Prototyping</h3>
-                <div>Get your blood tests delivered at home collect a sample from the news your blood tests.</div>
-            </div>
-            <div class="feature">
-                <div class="icon"><img src="images/features/3.png" alt=""></div>
-                <h3>Vector Editing</h3>
-                <div>Get your blood tests delivered at home collect a sample from the news your blood tests.</div>
-            </div>
-        </div>
+        <img alt="" class="section__img" src="/images/part9.png">
     </div>
 </main>
+<footer class="footer">
+    <a class="logo text-centered" href="#">
+        <span class="color_orange">App</span>Lab
+    </a>
+    <nav class="flex footer__nav">
+        <a href="#">Home</a>
+        <a href="#">Key Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">Testimonial</a>
+        <a href="#">FAQ</a>
+    </nav>
+    <div class="footer__social"><span></span><span></span><span style="opacity: 1;"></span><span></span></div>
+    <p style="opacity: 0.21">&copy;Applab 2021. All rights reserved</p>
+</footer>
 </body>
 </html>
