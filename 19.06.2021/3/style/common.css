@@ -204,7 +204,7 @@ body{
     justify-content: center;
     align-items: center;
     /*TODO linear gradient*/
-    background-image: url("/images/background/part10.png");
+    background-image: url("../images/background/part10.png");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 50px;
