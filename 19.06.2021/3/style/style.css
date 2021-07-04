@@ -4,6 +4,8 @@
     justify-content: space-between;
     margin-top: 4px;
     position: relative;
+    width: 100%;
+    margin: auto;
 }
 
 .header__a{
@@ -21,7 +23,7 @@
 .header__label{
     display: none;
 }
-@media(max-width: 768px) {
+@media(max-width: 850px) {
     .header__label{
         display: flex;
         flex-direction: column;
@@ -47,7 +49,7 @@
     z-index: 1;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 850px) {
     .header__nav {
         display: none;
         position: absolute;
@@ -63,7 +65,7 @@
     }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 850px) {
     .header__nav > .button {
         display: none;
     }
@@ -219,6 +221,8 @@
 .section9{
     align-items: center;
     max-width: 670px;
+    width: 100%;
+    margin: auto;
 }
 
 .section9_cards{
@@ -248,12 +252,24 @@
     font-family: FontAwesome5Pro;
 }
 
+@media(max-width: 1200px) {
+    .section10{
+        flex-direction: column;
+        justify-items: center;
+    }
+}
+
 .section12{
     margin-left: 225px;
 }
 @media(max-width: 1440px){
     .section12{
         margin-left: 25px;
+    }
+}
+@media(max-width: 1200px){
+    .section12{
+        flex-wrap: wrap;
     }
 }
 @media(max-width: 426px){
@@ -269,7 +285,12 @@
 .section12>img{
     position: relative;
     top: 60px;
-    margin-left: -120px;
+    /*margin-left: -120px;*/
+}
+@media(min-width: 1200px) {
+    .section12 > img {
+        margin-left: 0;
+    }
 }
 @media(max-width: 768px){
     .section12>img{
@@ -307,7 +328,7 @@
     justify-content: center;
 }
 
-@media(max-width: 426px){
+@media(max-width: 560px){
     .footer__nav{
         flex-wrap: wrap;
     }
