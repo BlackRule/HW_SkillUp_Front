@@ -2,6 +2,17 @@
     font-family: 'FontAwesome5Pro';
     font-style: normal;
     font-weight: 400;
-    font-display: swap;
     src: url('fa-regular.ttf') format('truetype');
+}
+
+.fa{
+    font-family: FontAwesome5Pro;
+}
+
+.fa-plus{
+    font-style: normal;
+}
+
+.fa-plus:before{
+    content: '\f067';
 }

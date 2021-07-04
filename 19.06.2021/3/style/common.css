@@ -14,6 +14,13 @@ body{
     display: flex;
     flex-direction: column;
 }
+
+.w1200{
+    max-width: 1200px;
+    padding: 15px;
+    display: flex;
+}
+
 .button{
     display: inline-flex;
     padding: 15px 45px;
@@ -21,6 +28,7 @@ body{
     background-color: #2500f9;
     color: white;
     font-weight: 700;/*bold*/
+    cursor: pointer;
 }
 
 .color_blue1{
@@ -127,11 +135,20 @@ body{
 .icon_red{
     background-color: #ffecef;
 }
-.icon_blue{
-    background-color: #f4f4ff;
+.icon_lightblue{
+    background-color: #eaf9ff;
 }
 .icon_green{
     background-color: #e4ffee;
+}
+.icon_lightviolet{
+    background-color: #f4f4ff;
+}
+.icon_lightyellow{
+    background-color: #fff6d3;
+}
+.icon_lightorange{
+    background-color: #fdeee4;
 }
 
 .vr{
@@ -161,6 +178,7 @@ body{
 .switch__button{
     background-color: white;
     color: black;
+    cursor: pointer;
 }
 
 
@@ -245,6 +263,10 @@ body{
     display: flex;
 }
 
+.flex-column{
+    flex-direction: column;
+}
+
 .review__footer{
     justify-content: space-between;
 }
@@ -289,3 +311,21 @@ body{
     }
 
 }
+
+.details{
+    background-color: #f5f7fa;
+    margin: 10px;
+    padding: 20px 45px;
+    cursor: pointer;
+}
+
+.details>summary>*{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+
+
+
