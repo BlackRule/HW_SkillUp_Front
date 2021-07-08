@@ -13,6 +13,7 @@ html{
 body{
     display: flex;
     flex-direction: column;
+    padding-top: 93px;
 }
 
 .w1200{
@@ -133,7 +134,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 28px;
+    margin: 36px;
 }
 .icon_red{
     background-color: #ffecef;
@@ -168,6 +169,8 @@ body{
 .switch__holder{
     border: 2px solid #ebebeb;
     border-radius: 29px;
+    margin-top: 43px;
+    margin-bottom: 39px;
 }
 @media(max-width: 767px) {
     .switch__button{

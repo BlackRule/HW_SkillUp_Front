@@ -8,4 +8,9 @@ fonts!
 2) Почему images/background/part3.png height: 1000px;А в фотошопе 865?
 TODO
    X for Burger
+   webpack sass autoprefixer
+   scroll to top button
+   1bg 1600
+   menu position fixed
    section2__list x-scroll
+   js scroll reviews
